@@ -8,6 +8,19 @@ android {
     namespace = "com.example.android.aboutme"
     compileSdk = 36
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+    buildFeatures {
+        compose = true
+        dataBinding = true // Move dataBinding configuration here
+    }
+
+
     defaultConfig {
         applicationId = "com.example.android.aboutme"
         minSdk = 34
